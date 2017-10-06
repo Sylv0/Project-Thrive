@@ -20,16 +20,10 @@ nav.fix
       opacity: .5;
 }
 
-nav.fix
-{
-      position: fixed;
-      background-color: SlateGray;
-      opacity: .5;
-}
-
 nav.fix:hover
 {
       opacity: 1;
+      background-color: #fcfcfc;
 }
 
 nav.fix.up
