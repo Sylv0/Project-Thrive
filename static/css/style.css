@@ -1,4 +1,93 @@
+*
+{
+      padding: 0; margin: 0;
+      box-sizing: border-box;
+}
+
+secoti::before
+{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100px;
+}
+
+nav
+{
+      height: 80px;
+      padding: 10px;
+      width: 100%;
+      transition: all .5s ease-in-out;
+      background-color: #fcfcfc;
+}
+
+nav.fix
+{
+      position: fixed;
+      background-color: SlateGray;
+      opacity: .5;
+}
+
+nav.fix
+{
+      position: fixed;
+      background-color: SlateGray;
+      opacity: .5;
+}
+
+nav.fix:hover
+{
+      opacity: 1;
+}
+
+nav.fix.up
+{
+      transform: translateY(-100%);
+}
+
+nav ul
+{
+      display: flex;
+      align-items: center;
+}
+
 nav ul li
 {
-    display: inline-block;
+      list-style: none;
+      margin: 0 20px;
+}
+
+nav a#toggle-nav
+{
+      text-decoration: none;
+      color: black;
+      position: fixed;
+      right: 10px;
+      transform: translateY(50%);
+}
+
+nav:not(.fix) a#toggle-nav
+{
+      display: none;
+}
+
+section.info
+{
+      height: 100vh;
+      background-color: DimGray;
+      overflow-y: hidden;
+}
+
+section.info#first-section.top::before
+{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100px;
+}
+
+section.clothes
+{
+      height: 100vh;
+      background-color: Gray;
 }
