@@ -13,9 +13,12 @@ function toggle()
 // Listen for scroll-event and change classes accordingly
 window.addEventListener('scroll', function()
 {
-      if(window.pageYOffset > 0 && !navbar.classList.contains('fix')){
-            navbar.classList.add("fix");
-            first_section.classList.add('top');
+      if(window.pageYOffset > 0){
+            if(!navbar.classList.contains('fix'))
+            {
+                  navbar.classList.add("fix");
+                  first_section.classList.add('top');
+            }
       }else if (window.pageYOffset == 0){
             navbar.classList.remove("fix");
             first_section.classList.remove('top');
