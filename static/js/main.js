@@ -1,18 +1,16 @@
+// Variables for all things needed(what can I say?)
 var navbar = document.getElementById("navbar");
 var toggle_nav = document.getElementById('toggle-nav');
 var first_section = document.getElementById('first-section');
 
+// Toggles "up"-class on navbar to... bring it up.
 function toggle()
 {
       navbar.classList.toggle("up");
       event.preventDefault();
 }
 
-function scrolled(e)
-{
-
-}
-
+// Listen for scroll-event and change classes accordingly
 window.addEventListener('scroll', function()
 {
       if(window.pageYOffset > 0 && !navbar.classList.contains('fix')){
