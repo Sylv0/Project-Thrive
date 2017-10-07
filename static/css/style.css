@@ -2,6 +2,7 @@
 {
       padding: 0; margin: 0;
       box-sizing: border-box;
+      font-family: Arial;
 }
 
 @media (max-width: 786px)
@@ -38,20 +39,20 @@ nav
       padding: 10px;
       width: 100%;
       transition: all .5s ease-in-out;
-      background-color: #fcfcfc;
+      background-color: DimGray;
 }
 
 nav.fix
 {
       position: fixed;
       background-color: SlateGray;
-      opacity: .5;
+      opacity: .75;
 }
 
 nav.fix:hover
 {
       opacity: 1;
-      background-color: #fcfcfc;
+      background-color: DimGray;
 }
 
 nav.fix.up
@@ -78,7 +79,7 @@ nav a#toggle-nav
       position: absolute;
       right: 0;
       top: 80px;
-      background-color: #fcfcfc;
+      background-color: DimGray;
       padding: 5px;
 }
 
@@ -90,7 +91,7 @@ nav:not(.fix) a#toggle-nav
 section.info
 {
       height: 100vh;
-      background-color: DimGray;
+      background-color: #fcfcfc;
       overflow-y: hidden;
 }
 
@@ -102,5 +103,5 @@ section.info#first-section.top
 section.clothes
 {
       height: 100vh;
-      background-color: Gray;
+      background-color: #eseses;
 }
