@@ -2,6 +2,7 @@
 var navbar = document.getElementById("navbar");
 var toggle_nav = document.getElementById('toggle-nav');
 var first_section = document.getElementById('first-section');
+var link_list = document.getElementById('link-list');
 
 // Toggles "up"-class on navbar to... bring it up.
 function toggle()
@@ -23,4 +24,9 @@ window.addEventListener('scroll', function()
             navbar.classList.remove("fix");
             first_section.classList.remove('top');
       }
+}, true)
+
+navbar.addEventListener('click', function()
+{
+  link_list.classList.toggle('hidden');
 }, true)

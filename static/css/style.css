@@ -4,8 +4,34 @@
       box-sizing: border-box;
 }
 
+@media (max-width: 786px)
+{
+  nav ul
+  {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    height: 200px;
+    justify-content: space-between;
+    background-color: #fcfcfc;
+    padding: 10px 0;
+    transition: all .5s ease-in-out;
+  }
+  nav a.toggle-nav{
+    display: block;
+  }
+
+  nav ul.hidden
+  {
+    visibility: hidden;
+  }
+}
+
 nav
 {
+    display: flex;
       height: 80px;
       padding: 10px;
       width: 100%;
@@ -47,9 +73,11 @@ nav a#toggle-nav
 {
       text-decoration: none;
       color: black;
-      position: fixed;
-      right: 10px;
-      transform: translateY(50%);
+      position: absolute;
+      right: 0;
+      top: 80px;
+      background-color: #fcfcfc;
+      padding: 5px;
 }
 
 nav:not(.fix) a#toggle-nav
