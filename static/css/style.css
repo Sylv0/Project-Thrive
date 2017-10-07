@@ -17,15 +17,17 @@
     justify-content: space-between;
     background-color: #fcfcfc;
     padding: 10px 0;
-    transition: all .5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ease-in-out, opacity .5s ease-in-out;
   }
-  nav a.toggle-nav{
-    display: block;
+  nav a#toggle-nav{
+    display: none;
   }
 
-  nav ul.hidden
-  {
-    visibility: hidden;
+  nav:hover ul{
+    visibility: visible;
+    opacity: 1;
   }
 }
 

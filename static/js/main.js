@@ -26,7 +26,7 @@ window.addEventListener('scroll', function()
       }
 }, true)
 
-navbar.addEventListener('click', function()
-{
-  link_list.classList.toggle('hidden');
-}, true)
+// navbar.addEventListener('click', function()
+// {
+//   link_list.classList.toggle('hidden');
+// }, true)
