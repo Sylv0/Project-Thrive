@@ -39,20 +39,20 @@ nav
       padding: 10px;
       width: 100%;
       transition: all .5s ease-in-out;
-      background-color: DimGray;
+      background-color: #404040;
 }
 
 nav.fix
 {
       position: fixed;
-      background-color: SlateGray;
+      background-color: #7F7F7F;
       opacity: .75;
 }
 
 nav.fix:hover
 {
       opacity: 1;
-      background-color: DimGray;
+      background-color: #404040;
 }
 
 nav.fix.up
@@ -79,7 +79,7 @@ nav a#toggle-nav
       position: absolute;
       right: 0;
       top: 80px;
-      background-color: DimGray;
+      background-color: #7F7F7F;
       padding: 5px;
 }
 
@@ -103,5 +103,5 @@ section.info#first-section.top
 section.clothes
 {
       height: 100vh;
-      background-color: #eseses;
+      background-color: #E5E5E5;
 }
