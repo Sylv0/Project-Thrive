@@ -88,6 +88,12 @@ nav:not(.fix) a#toggle-nav
       display: none;
 }
 
+section h1
+{
+  font-family: 'Lobster', cursive;
+  font-size: 4em;
+}
+
 section.info
 {
       height: 100vh;
