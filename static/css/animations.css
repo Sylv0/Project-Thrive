@@ -1,0 +1,13 @@
+@keyframes nav-links-fade
+{
+  0%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  1%{
+    visibility: visible;
+  }
+  100%{
+    opacity: 1;
+  }
+}
