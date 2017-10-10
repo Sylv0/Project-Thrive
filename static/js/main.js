@@ -26,7 +26,19 @@ window.addEventListener('scroll', function()
       }
 }, true)
 
-// navbar.addEventListener('click', function()
+navbar.addEventListener('click', function()
+{
+  // if(!link_list.classList.contains('selected'))
+  // {
+  //   link_list.classList.add('selected');
+  // }
+  link_list.classList.toggle('selected');
+})
+
+// window.addEventListener('click', function()
 // {
-//   link_list.classList.toggle('hidden');
-// }, true)
+//   if(link_list.classList.contains('selected'))
+//   {
+//     link_list.classList.remove('selected');
+//   }
+// })

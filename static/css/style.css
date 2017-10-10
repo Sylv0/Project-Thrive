@@ -5,6 +5,14 @@
   font-family: Arial;
 }
 
+@media (max-width: 360px)
+{
+  nav ul.selected
+  {
+    width: 100%;
+  }
+}
+
 @media (max-width: 786px)
 {
   nav ul
@@ -20,15 +28,18 @@
     padding: 10px 0;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s ease-in-out, opacity .5s ease-in-out;
+    transition: visibility 0s ease-in, opacity .5s ease-in-out;
   }
-  nav a#toggle-nav{
+  nav a#toggle-nav
+  {
     display: none;
   }
 
-  nav:hover ul{
+  nav ul.selected
+  {
     visibility: visible;
     opacity: 1;
+    color: black;
   }
 }
 
