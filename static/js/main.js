@@ -26,19 +26,8 @@ window.addEventListener('scroll', function()
       }
 }, true)
 
-navbar.addEventListener('click', function()
+navbar.addEventListener('click', function(e)
 {
-  // if(!link_list.classList.contains('selected'))
-  // {
-  //   link_list.classList.add('selected');
-  // }
+  if(navbar != e.target) return;
   link_list.classList.toggle('selected');
 })
-
-// window.addEventListener('click', function()
-// {
-//   if(link_list.classList.contains('selected'))
-//   {
-//     link_list.classList.remove('selected');
-//   }
-// })
