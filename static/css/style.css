@@ -30,7 +30,7 @@
     padding: 10px 0;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s ease-in, opacity .5s ease-in-out;
+    transition: visibility 0s, opacity .5s ease-in-out;
   }
   nav a#toggle-nav
   {
