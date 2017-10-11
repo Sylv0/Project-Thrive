@@ -28,7 +28,7 @@ window.addEventListener('scroll', function()
 
 navbar.addEventListener('click', function(e)
 {
-  console.log(window.innerWidth);
+  //console.log(window.innerWidth);
   if(navbar != e.target || window.innerWidth > 768) return;
   link_list.classList.toggle('selected');
 })
