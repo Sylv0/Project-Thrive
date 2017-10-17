@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', function(){
+
   // Variables for all things needed(what can I say?)
   var navbar = document.getElementById("navbar");
   var toggle_nav = document.getElementById('toggle-nav');
@@ -13,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function(){
   }
 
   Array.prototype.slice.call(document.getElementsByTagName('section')).forEach(function(value, index){
-    value.innerHTML = value.getBoundingClientRect().top;
+    value.innerHTML += value.getBoundingClientRect().top;
   });
 
   // Listen for scroll-event and change classes accordingly

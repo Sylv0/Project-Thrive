@@ -11,3 +11,18 @@
     opacity: 1;
   }
 }
+/* text animations*/
+@keyframes run-text {
+  0%   {transform:translateY(80vh);}
+
+  100% {transform:translateY(0vh);}
+
+}
+/* images animations*/
+@keyframes run-images
+{
+  0%   {transform:translateX(70vh);}
+
+  100% {transform:translateX(0vh);}
+
+}
