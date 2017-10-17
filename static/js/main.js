@@ -12,8 +12,9 @@ function toggle()
 }
 
 // Listen for scroll-event and change classes accordingly
-window.addEventListener('scroll', function()
+window.addEventListener('scroll', function(e)
 {
+      toggle_nav.innerHTML = window.pageYOffset;
       if(window.pageYOffset > 0){
             if(!navbar.classList.contains('fix'))
             {
