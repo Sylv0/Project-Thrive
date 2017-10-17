@@ -54,6 +54,7 @@ nav
   transition: all .5s ease-in-out;
   background-color: #404040;
   color: white;
+  z-index: 1;
 }
 
 nav div.img
@@ -138,4 +139,26 @@ section.clothes
 {
   height: 100vh;
   background-color: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clothes#animation p
+{
+  width: 30%;
+  height:20%;
+  background-color:#E5E5E5 ;
+  animation-name:run;
+  animation-duration: .9s;
+  animation-iteration-count: 1;
+  position: relative;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+@keyframes run {
+  0%   {transform:translateY(100vh);}
+
+  100% {transform:translateY(0vh);}
+
 }
