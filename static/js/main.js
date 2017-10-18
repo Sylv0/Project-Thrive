@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', function(){
   var toggle_nav = document.getElementById('toggle-nav');
   var first_section = document.getElementById('first-section');
   var link_list = document.getElementById('link-list');
+  var margin_div = document.getElementById('margin');
 
   // Toggles "up"-class on navbar to... bring it up.
   function toggle()
@@ -26,10 +27,12 @@ window.addEventListener('DOMContentLoaded', function(){
       {
         navbar.classList.add("fix");
         first_section.classList.add('top');
+        margin_div.classList.add('show');
       }
     }else if (window.pageYOffset == 0){
       navbar.classList.remove("fix");
       first_section.classList.remove('top');
+      margin_div.classList.remove('show');
     }
   }, true)
 
