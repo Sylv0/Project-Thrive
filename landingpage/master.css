@@ -28,17 +28,14 @@
   width: 60%;
   height: auto;
 }
-<<<<<<< HEAD
-=======
 
 .info-section .info-article .more-info{
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s,opacity 0.5s linear;
+  transition: visibility 0s opacity 0.5s linear;
 }
 
 .info-section .info-article.expanded .more-info{
   visibility: visible;
   opacity: 1;
 }
->>>>>>> real-site
