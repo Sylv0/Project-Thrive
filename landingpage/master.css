@@ -11,6 +11,12 @@
   height: 100vh;
 }
 
+.info-section .info-article{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
 .info-section .info-article img{
   width: 100%;
   height: auto;
@@ -20,4 +26,16 @@
 .info-section .info-article.expanded img{
   width: 60%;
   height: auto;
+}
+
+.info-section .info-article .more-info{
+  display: none;
+  opacity: 0;
+  transition: display 0s, opacity 0.5s;
+}
+
+.info-section .info-article.expanded .more-info{
+  display: block;
+  opacity: 1;
+  transition: display 0s, opacity 0.5s;
 }
