@@ -8,13 +8,14 @@
 }
 
 .info-section{
-  height: 100vh;
+  height: 100%;
 }
 
 .info-section .info-article{
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
+  align-items: flex-end;
 }
 
 .info-section .info-article img{
@@ -29,13 +30,12 @@
 }
 
 .info-section .info-article .more-info{
-  display: none;
+  visibility: hidden;
   opacity: 0;
-  transition: display 0s, opacity 0.5s;
+  transition: visibility 0s,opacity 0.5s linear;
 }
 
 .info-section .info-article.expanded .more-info{
-  display: block;
+  visibility: visible;
   opacity: 1;
-  transition: display 0s, opacity 0.5s;
 }
