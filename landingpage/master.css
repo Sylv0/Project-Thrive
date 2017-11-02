@@ -18,6 +18,10 @@
   align-items: flex-end;
 }
 
+.info-section .info-article.expanded .not-title{
+  display: none;
+}
+
 .info-section .info-article img{
   width: 100%;
   height: auto;
@@ -32,7 +36,7 @@
 .info-section .info-article .more-info{
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s opacity 0.5s linear;
+  transition: visibility 0s,opacity 0.5s linear;
 }
 
 .info-section .info-article.expanded .more-info{
