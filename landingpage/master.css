@@ -2,44 +2,101 @@
   margin: 0; padding: 0; box-sizing: border-box;
 }
 
-.container{
-  background-color: #FAFAFA;
-  width: 100%;
-}
+@media (orientation:portrait){
+  .container{
+    background-color: rgb(255,198,138);
+    width: 100%;
+    font-family: sans-serif;
+    color: white;
+  }
 
-.info-section{
-  height: 100%;
-}
+  .info-section{
+    height: 100%;
+  }
 
-.info-section .info-article{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
+  .info-section .info-article{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-.info-section .info-article.expanded .not-title{
-  display: none;
-}
+  .info-section .info-article .title{
+    position: relative;
+    right: 95%;
+    top: 35%;
+    transform: translateX(100%);
+    font-size: 54px;
+    font-weight: bold;
+  }
 
-.info-section .info-article img{
-  width: 100%;
-  height: auto;
-  transition: all 0.5s ease-in-out;
-}
+  .info-section .info-article.expanded .title{
+    font-size: 36px;
+    top: 20%;
+  }
 
-.info-section .info-article.expanded img{
-  width: 60%;
-  height: auto;
-}
+  .info-section .info-article:not(.expanded) .not-title{
+    position: relative;
+    right: 85%;
+    top: 35%;
+    transform: translateX(100%);
+    font-size: 18px;
+    margin: 15px;
+  }
 
-.info-section .info-article .more-info{
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s,opacity 0.5s linear;
-}
+  .info-section .info-article.expanded .not-title{
+    display: none;
+  }
 
-.info-section .info-article.expanded .more-info{
-  visibility: visible;
-  opacity: 1;
+  .info-section .info-article:not(.expanded) .toggle-info{
+    position: relative;
+    right: 95%;
+    top: 35%;
+    transform: translateX(100%);
+    text-decoration: none;
+    color: white;
+    background-color: rgb(246,145,149);
+    padding: 5px;
+    font-size: 24px;
+  }
+
+  .info-section .info-article:not(.expanded) .toggle-info::after{
+    content: 'Visa Mer';
+  }
+
+  .info-section .info-article.expanded .toggle-info{
+    right: 0%;
+    transform: translateY(100%);
+    text-decoration: none;
+    color: rgb(221,175,44);
+    background-color: white;
+    padding: 5px;
+    font-size: 18px;
+  }
+
+  .info-section .info-article.expanded .toggle-info::after{
+    content: 'Stäng';
+  }
+
+  .info-section .info-article > img{
+    width: 80%;
+    height: auto;
+    align-self: center;
+  }
+
+  .info-section .info-article.expanded > img{
+    width: 70%;
+    height: auto;
+    align-self: inherit;
+  }
+
+  .info-section .info-article .more-info{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .info-section .info-article.expanded .more-info{
+    visibility: visible;
+    opacity: 1;
+  }
 }
