@@ -8,7 +8,14 @@
 }
 
 .info-section{
+  height: 100%;
+}
+
+.info-section .info-article{
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .info-section .info-article img{
@@ -21,3 +28,17 @@
   width: 60%;
   height: auto;
 }
+<<<<<<< HEAD
+=======
+
+.info-section .info-article .more-info{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s,opacity 0.5s linear;
+}
+
+.info-section .info-article.expanded .more-info{
+  visibility: visible;
+  opacity: 1;
+}
+>>>>>>> real-site
