@@ -4,12 +4,15 @@
   margin: 0; padding: 0; box-sizing: border-box;
 }
 
+.container{
+  background-color: rgb(255,198,138);
+  font-family: 'Lora',serif;
+  color: white;
+}
+
 @media (orientation:portrait){
   .container{
-    background-color: rgb(255,198,138);
     width: 100%;
-    font-family: 'Lora',serif;
-    color: white;
   }
 
   .info-section{
@@ -100,5 +103,12 @@
   .info-section .info-article.expanded .more-info{
     visibility: visible;
     opacity: 1;
+  }
+}
+
+@media (orientation: landscape){
+  .info-section .info-article > img{
+    position: relative;
+    
   }
 }
