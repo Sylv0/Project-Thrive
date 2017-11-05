@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
 * {
-  margin: 0; padding: 0; box-sizing: border-box;
+  margin: 0; padding: 0; box-sizing: border-box; z-index: 1;
 }
 
 .container{
@@ -21,9 +21,6 @@
 
   .info-section .info-article{
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
   }
 
   .info-section .info-article .title{
@@ -33,6 +30,7 @@
     transform: translateX(100%);
     font-size: 54px;
     font-weight: bold;
+    transition: all .5s ease-in-out;
   }
 
   .info-section .info-article.expanded .title{
@@ -53,11 +51,8 @@
     display: none;
   }
 
-  .info-section .info-article:not(.expanded) .toggle-info{
+  .info-section .info-article .toggle-info{
     position: relative;
-    right: 95%;
-    top: 35%;
-    transform: translateX(100%);
     text-decoration: none;
     color: white;
     background-color: rgb(246,145,149);
@@ -65,17 +60,14 @@
     font-size: 24px;
   }
 
-  .info-section .info-article:not(.expanded) .toggle-info::after{
+  .info-section .info-article .toggle-info::after{
     content: 'Visa Mer';
   }
 
   .info-section .info-article.expanded .toggle-info{
-    right: 0%;
-    transform: translateY(100%);
     text-decoration: none;
     color: rgb(221,175,44);
     background-color: white;
-    padding: 5px;
     font-size: 18px;
   }
 
@@ -86,18 +78,21 @@
   .info-section .info-article > img{
     width: 80%;
     height: auto;
-    align-self: center;
+    position: relative;
+    left: 10%;
+    z-index: 0;
+    transition: all .5s ease-in-out;
   }
 
   .info-section .info-article.expanded > img{
     width: 70%;
     height: auto;
-    align-self: inherit;
   }
 
   .info-section .info-article .more-info{
     visibility: hidden;
     opacity: 0;
+    transition: visibility 0s, opacity .5s ease-in-out;
   }
 
   .info-section .info-article.expanded .more-info{
