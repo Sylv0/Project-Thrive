@@ -1,5 +1,5 @@
 function infoToggle(event,elmnt)
 {
     event.preventDefault();
-    elmnt.parentNode.classList.toggle('expanded');
+    elmnt.parentNode.parentNode.classList.toggle('expanded');
 }

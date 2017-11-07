@@ -19,50 +19,56 @@
     height: 100%;
   }
 
-  .info-section .info-article{
+  .info-article{
     height: 100vh;
-  }
-  
-  .info-section .info-article > img{
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 0;
+    background-image: url("https://via.placeholder.com/375x667");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     transition: all .5s ease-in-out;
   }
 
-  .info-section .info-article.expanded > img{
-    width: 70%;
-    height: auto;
+  .info-article.expanded{
+    background-image: url("https://via.placeholder.com/300x300");
+    background-position: 90% 10%;
+    background-size: 60%;
+    padding: 5%;
   }
 
-  .info-section .info-article .title{
-    display: inline-block;
+  .info-article .content{
+    height: 100%;
+  }
+
+  .info-article .title{
     position: relative;
-    top: 0;
+    top: 60vh;
     font-size: 54px;
     font-weight: bold;
+    color: rgb(221,175,44);
     transition: all .5s ease-in-out;
   }
 
-  .info-section .info-article.expanded .title{
+  .info-article.expanded .title{
     font-size: 36px;
     top: 20%;
+    color: white;
   }
 
-  .info-section .info-article:not(.expanded) .not-title{
-    display: inline-block;
+  .info-article .not-title{
+    position: relative;
+    top: 60vh;
     font-size: 18px;
     margin: 15px;
+    color: white;
   }
 
-  .info-section .info-article.expanded .not-title{
+  .info-article.expanded .not-title{
     display: none;
   }
 
-  .info-section .info-article .toggle-info{
-    display: inline-block;
+  .info-article .toggle-info{
     position: relative;
+    top: 60vh;
     text-decoration: none;
     color: white;
     background-color: rgb(246,145,149);
@@ -70,35 +76,41 @@
     font-size: 24px;
   }
 
-  .info-section .info-article .toggle-info::after{
+  .info-article .toggle-info::after{
     content: 'Visa Mer';
   }
 
-  .info-section .info-article.expanded .toggle-info{
+  .info-article.expanded .toggle-info{
     text-decoration: none;
-    color: rgb(221,175,44);
-    background-color: white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    border-radius: 5px;
     font-size: 18px;
+    top: 0%;
+    left: 80%;
   }
 
-  .info-section .info-article.expanded .toggle-info::after{
+  .info-article.expanded .toggle-info::after{
     content: 'Stäng';
   }
 
-  .info-section .info-article .more-info{
+  .info-article .more-info{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity .5s ease-in-out;
   }
 
-  .info-section .info-article.expanded .more-info{
+  .info-article.expanded .more-info{
     visibility: visible;
     opacity: 1;
+    position: relative;
+    top: 40%;
   }
 }
 
 @media (orientation: landscape){
-  .info-section .info-article > img{
+.info-section .info-article > img{
     position: relative;
     
   }
