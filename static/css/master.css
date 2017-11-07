@@ -10,7 +10,7 @@
   color: black;
 }
 
-@media (orientation:portrait){
+@media (max-width: 736px){
   .container{
     width: 100%;
   }
@@ -37,6 +37,7 @@
 
   .info-article .content{
     height: 100%;
+    margin-left: 5%;
   }
 
   .info-article .title{
@@ -44,7 +45,7 @@
     top: 60vh;
     font-size: 54px;
     font-weight: bold;
-    color: rgb(221,175,44);
+    color: rgb(255,198,138);
     transition: all .5s ease-in-out;
   }
 
@@ -60,10 +61,16 @@
     font-size: 18px;
     margin: 15px;
     color: white;
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: visibility .5s, opacity .5s ease-in-out, transform .5s;
   }
 
   .info-article.expanded .not-title{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100%);
   }
 
   .info-article .toggle-info{
@@ -96,16 +103,18 @@
   }
 
   .info-article .more-info{
+    position: relative;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity .5s ease-in-out;
+    transform: translateY(300%);
+    transition: visibility 0s, transform .5s ease-in-out;
   }
 
   .info-article.expanded .more-info{
     visibility: visible;
     opacity: 1;
-    position: relative;
     top: 40%;
+    transform: translateY(0);
   }
 }
 
