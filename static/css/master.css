@@ -75,7 +75,7 @@
 
   .info-article .toggle-info{
     position: relative;
-    top: 60vh;
+    top: 85vh;
     text-decoration: none;
     color: white;
     background-color: rgb(246,145,149);
@@ -94,7 +94,7 @@
     border: 1px solid white;
     border-radius: 5px;
     font-size: 18px;
-    top: 0%;
+    top: 5vh;
     left: 80%;
   }
 
