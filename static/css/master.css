@@ -10,7 +10,7 @@
   color: black;
 }
 
-@media (orientation: portrait) and (max-width: 736px){
+@media (max-width: 736px){
   .container{
     width: 100%;
   }
@@ -37,7 +37,7 @@
 
   .info-article .content{
     height: 100%;
-    padding-left: 5%;
+    margin-left: 5%;
   }
 
   .info-article .title{
@@ -106,97 +106,22 @@
     position: relative;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(400%);
+    transform: translateY(300%);
     transition: visibility 0s, transform .5s ease-in-out;
   }
 
   .info-article.expanded .more-info{
     visibility: visible;
     opacity: 1;
-    top: 25%;
+    top: 40%;
     transform: translateY(0);
   }
 }
 
 
 @media (orientation: landscape){
-  .info-article{
-    height: 100vh;
-    background-image: url("https://via.placeholder.com/375x667");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all .5s ease-in-out;
-  }
-  .info-article .title{
+  .info-section .info-article > img
+  {
     position: relative;
-    top: 60vh;
-    font-size: 54px;
-    font-weight: bold;
-    color: rgb(255,198,138);
-    transition: all .5s ease-in-out;
-  }
-  .info-article.expanded .title{
-    font-size: 36px;
-    top: 20%;
-    color: white;
-  }
-
-  .info-article .not-title{
-    position: relative;
-    top: 60vh;
-    font-size: 18px;
-    margin: 15px;
-    color: white;
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0);
-    transition: visibility .5s, opacity .5s ease-in-out, transform .5s;
-  }
-  .info-article.expanded .not-title{
-    visibility: hidden;
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  .info-article .more-info{
-    position: relative;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(400%);
-    transition: visibility 0s, transform .5s ease-in-out;
-  }
-  .info-article.expanded .more-info{
-    visibility: visible;
-    opacity: 1;
-    top: 25%;
-    transform: translateY(0);
-  }
-  .info-article .toggle-info{
-    position: relative;
-    top: 60vh;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(246,145,149);
-    padding: 5px;
-    font-size: 24px;
-  }
-
-  .info-article .toggle-info::after{
-    content: 'Visa Mer';
-  }
-
-  .info-article.expanded .toggle-info{
-    text-decoration: none;
-    color: white;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 18px;
-    top: 0%;
-    left: 80%;
-  }
-
-  .info-article.expanded .toggle-info::after{
-    content: 'Stäng';
   }
 }
