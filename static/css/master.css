@@ -118,9 +118,23 @@
   }
 }
 
+
 @media (orientation: landscape){
-.info-section .info-article > img{
-    position: relative;
-    
+  .info-article{
+    height: 100vh;
+    background-image: url("https://via.placeholder.com/375x667");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .5s ease-in-out;
   }
+  .info-article .title{
+    position: relative;
+    top: 60vh;
+    font-size: 54px;
+    font-weight: bold;
+    color: rgb(255,198,138);
+    transition: all .5s ease-in-out;
+  }
+
 }
