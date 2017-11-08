@@ -106,15 +106,14 @@
     position: relative;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(400%);
-    transition: visibility 0s, transform .5s ease-in-out;
+    transition: visibility 0s;
+    overflow: hidden;
   }
 
   .info-article.expanded .more-info{
     visibility: visible;
     opacity: 1;
     top: 25%;
-    transform: translateY(0);
   }
 
   .page-bar{
