@@ -37,7 +37,7 @@
 
   .info-article .content{
     height: 100%;
-    padding-left: 5%;
+    padding-left: 7%;
   }
 
   .info-article .title{
@@ -116,8 +116,46 @@
     top: 25%;
     transform: translateY(0);
   }
-}
 
+  .page-bar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    opacity: .5;
+  }
+
+  .page-bar li{
+    margin: 1px 5px;
+    list-style-type: none;
+  }
+
+  .page-bar li::before{
+    content: "• ";
+    color: gray; /* or whatever color you prefer */
+  }
+
+  .page-bar li.active{
+    margin: 5px;
+    list-style-type: none;
+    color: lightgray;
+  }
+
+  .page-bar li.active::before{
+    content: "\002022";
+    color: lightgray; /* or whatever color you prefer */
+  }
+
+  .page-bar span{
+    width: 2px;
+    height: 20px;
+    background-color: gray;
+    margin-left: 7px;
+    background-size: 50%;
+  }
+}
 
 @media (orientation: landscape){
   .info-section .info-article > img
