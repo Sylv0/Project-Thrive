@@ -1,4 +1,4 @@
-function infoToggle(event,elmnt)
+const infoToggle = (event,elmnt) =>
 {
     event.preventDefault();
     elmnt.parentNode.parentNode.classList.toggle('expanded');
@@ -28,15 +28,9 @@ for(let i = 0; i < pages.length; i++)
         page_list.children[i].classList.add('active');
         break;
     }
-    page_list.children[i].addEventListener('click', function(event)
-    {
-        console.log(event);
-    });
 }
 
-console.log(document.querySelector('#page-list li::before'));
-
-window.addEventListener('scroll', function(event)
+window.addEventListener('scroll', (event) =>
 {
     for(let i = 0; i < pages.length; i++)
     {
