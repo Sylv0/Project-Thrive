@@ -160,7 +160,15 @@
     margin:10px;
     margin-top: 0;
     height: 100vh;
-    background-color: grey;
+  }
+
+  .desktop
+  {
+
+    height:60vh;
+    width:150vh;
+    margin-left: 12%;
+    z-index: 0;
   }
 
 
