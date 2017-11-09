@@ -154,8 +154,14 @@
 }
 
 @media (orientation: landscape){
-  .info-section .info-article > img
+  .info-article
   {
-    position: relative;
+    padding:10px;
+    margin:10px;
+    margin-top: 0;
+    height: 100vh;
+    background-color: grey;
   }
+
+
 }
