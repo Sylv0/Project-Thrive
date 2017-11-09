@@ -11,6 +11,10 @@
 }
 
 @media (orientation: portrait) and (max-width: 736px){
+  .desktop{
+    display: none;
+  }
+
   .container{
     width: 100%;
   }
