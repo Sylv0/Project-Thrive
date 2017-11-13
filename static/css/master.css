@@ -5,58 +5,66 @@
   margin: 0; padding: 0; box-sizing: border-box; z-index: 1;
 }
 
-.container{
+.container
+{
   background-color: rgb(255,198,138);
   font-family: 'Playfair Display',serif;
   color: black;
 }
 
-.bg-yellow{
+.bg-yellow
+{
   background-color: rgb(255, 198, 64);
 }
 
-.bg-blue{
+.bg-blue
+{
   background-color: rgb(101, 52, 255);
 }
 
-.bg-pink{
+.bg-pink
+{
   background-color: rgb(252, 214, 219);
 }
 
-.bg-purple{
+.bg-purple
+{
   background-color: rgb(242, 121, 121);
 }
 
 @media (orientation: portrait) and (max-width: 736px){
-  .desktop{
-    display: none;
-  }
 
-  .container{
+  .container
+  {
     width: 100%;
   }
 
-  .info-section{
+  .info-section
+  {
     height: 100%;
   }
 
-  .landing{
+  .landing
+  {
     height: 100vh;
     padding: 50px 75px;
     background-color: pink;
   }
 
-  .landing h2{
+  .landing h2
+  {
     font-weight: bold;
     font-size: 2em;
   }
 
-  .landing p{
+  .landing p
+  {
     margin-top: 30%;
     letter-spacing: 2px;
   }
 
-  .info-article{
+  .info-article
+  {
     height: 100vh;
     background-image: url("https://via.placeholder.com/375x667");
     background-size: 100%;
@@ -199,7 +207,7 @@
     height: 100vh;
   }
 
-  .content
+  .desktop
   {
     background-image: url("https://via.placeholder.com/300x300");
     background-repeat: no-repeat;
