@@ -84,9 +84,16 @@
     padding-left: 7%;
   }
 
-  .info-article .title{
+  .desktop{
     position: relative;
     top: 60vh;
+  }
+
+  .info-article.expanded .desktop{
+    top: 10vh;
+  }
+
+  .info-article .title{
     font-size: 54px;
     font-weight: bold;
     color: rgb(255,198,138);
@@ -100,21 +107,13 @@
   }
 
   .info-article .not-title{
-    position: relative;
-    top: 60vh;
     font-size: 18px;
     margin: 15px;
     color: white;
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0);
-    transition: visibility .5s, opacity .5s ease-in-out, transform .5s;
   }
 
   .info-article.expanded .not-title{
-    visibility: hidden;
-    opacity: 0;
-    transform: translateX(-100%);
+    display: none;
   }
 
   .info-article .toggle-info{
