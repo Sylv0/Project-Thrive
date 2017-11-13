@@ -66,7 +66,7 @@
   .info-article
   {
     height: 100vh;
-    background-image: url("https://via.placeholder.com/375x667");
+    background-image: url("https://via.placeholder.com/750x1334");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -155,7 +155,7 @@
   .info-article.expanded .more-info{
     visibility: visible;
     opacity: 1;
-    top: 35%;
+    top: 45%;
     overflow: scroll;
     font-size: .7em;
   }
@@ -198,6 +198,11 @@
 }
 
 @media (orientation: landscape){
+  .mobile
+  {
+    display: none;
+  }
+
   .info-article
   {
     padding:10px;
