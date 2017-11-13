@@ -167,13 +167,30 @@
     height: 100vh;
   }
 
-  .desktop
+  .content
   {
+    background-image: url("https://via.placeholder.com/300x300");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     height:60vh;
     width:150vh;
     margin-left: 12%;
-    z-index: 0;
   }
+  .title
+  {
+    position: relative;
+    font-size: 54px;
+    font-weight: bold;
 
+  }
+  .first
+  {
+    text-align: center;
+  }
+.second
+{
+  margin:10px;
+}
 
 }
