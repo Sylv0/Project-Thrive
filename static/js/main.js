@@ -1,45 +1,48 @@
-window.addEventListener('DOMContentLoaded', function(){
-
-  // Variables for all things needed(what can I say?)
-  var navbar = document.getElementById("navbar");
-  var toggle_nav = document.getElementById('toggle-nav');
-  var first_section = document.getElementById('first-section');
-  var link_list = document.getElementById('link-list');
-  var margin_div = document.getElementById('margin');
-
-  // Toggles "up"-class on navbar to... bring it up.
-  function toggle()
-  {
-    navbar.classList.toggle("up");
+const infoToggle = (event,elmnt) =>
+{
     event.preventDefault();
-  }
+    elmnt.parentNode.parentNode.classList.toggle('expanded');
+}
 
-  Array.prototype.slice.call(document.getElementsByTagName('section')).forEach(function(value, index){
-    value.innerHTML += value.getBoundingClientRect().top;
-  });
+window.onload = () => {
+    const pages = document.querySelector('#info-section').children;
+    const page_list = document.querySelector('#page-list');
 
-  // Listen for scroll-event and change classes accordingly
-  window.addEventListener('scroll', function(e)
-  {
-    toggle_nav.innerHTML = window.pageYOffset;
-    if(window.pageYOffset > 0){
-      if(!navbar.classList.contains('fix'))
-      {
-        navbar.classList.add("fix");
-        first_section.classList.add('top');
-        margin_div.classList.add('show');
-      }
-    }else if (window.pageYOffset == 0){
-      navbar.classList.remove("fix");
-      first_section.classList.remove('top');
-      margin_div.classList.remove('show');
+    let scrolling = false;
+
+    for(let i = 0; i < pages.length; i++)
+    {
+        let li = document.createElement('li');
+        let index = document.createTextNode(i+1);
+        li.appendChild(index);
+        page_list.appendChild(li);
+        if(i !== (pages.length-1)){
+            let span = document.createElement('span');
+            page_list.appendChild(span);
+        }
     }
-  }, true)
 
-  navbar.addEventListener('click', function(e)
-  {
-    //console.log(window.innerWidth);
-    if(navbar != e.target || window.innerWidth > 768) return;
-    link_list.classList.toggle('selected');
-  })
-})
+    for(let i = 0; i < pages.length; i++)
+    {
+        if((window.pageYOffset + (window.innerHeight/2)) >= (pages[i].offsetTop + (pages[i].offsetHeight/2)))
+        {
+            page_list.children[i].classList.add('active');
+            break;
+        }
+    }
+
+    window.addEventListener('scroll', (event) =>
+    {
+        for(let i = 0; i < pages.length; i++)
+        {
+            if(window.pageYOffset >= pages[i].offsetTop/2 &&
+                window.pageYOffset <= pages[i].offsetTop &&
+                !page_list.children[i].classList.contains('active'))
+            {
+                document.querySelector('li.active').classList.remove('active');
+                page_list.querySelectorAll('li')[i].classList.add('active');
+                break;
+            }
+        }
+    });
+}
