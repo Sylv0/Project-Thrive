@@ -37,9 +37,9 @@ window.onload = () => {
     {
         for(let i = 0; i < pages.length; i++)
         {
-            if(window.pageYOffset >= pages[i].offsetTop
-                && window.pageYOffset <= pages[i].offsetTop
-                && !page_list.children[i].classList.contains('active'))
+            if(window.pageYOffset >= pages[i].offsetTop/2 &&
+                window.pageYOffset <= pages[i].offsetTop &&
+                !page_list.children[i].classList.contains('active'))
             {
                 document.querySelector('li.active').classList.remove('active');
                 page_list.querySelectorAll('li')[i].classList.add('active');
