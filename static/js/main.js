@@ -2,6 +2,16 @@ const infoToggle = (event,elmnt) =>
 {
     event.preventDefault();
     elmnt.parentNode.parentNode.classList.toggle('expanded');
+    if(document.querySelectorAll('.info-article.expanded').length > 0){
+        document.querySelectorAll('.info-article:not(.expanded)').forEach((elmnt) => {
+            elmnt.classList.add('hide');
+        });
+    }else if(document.querySelectorAll('.info-article.expanded').length === 0){
+        document.querySelectorAll('.info-article.hide').forEach((elmnt) => {
+            elmnt.classList.remove('hide');
+        });
+    }
+    console.log(document.querySelectorAll('.info-article.expanded'));
     document.querySelector('.landing').classList.toggle('hide');
     window.scrollTo(0, elmnt.parentNode.parentNode.offsetTop);
 }

@@ -33,6 +33,10 @@
   background-color: rgb(242, 121, 121);
 }
 
+.hide{
+  display: none;
+}
+
 @media (orientation: portrait) and (max-width: 736px){
 
 
@@ -63,10 +67,6 @@
   {
     margin-top: 30%;
     letter-spacing: 2px;
-  }
-
-  .landing.hide{
-    display: none;
   }
 
   .info-article
