@@ -35,6 +35,7 @@
 
 @media (orientation: portrait) and (max-width: 736px){
 
+
   .container
   {
     width: 100%;
@@ -90,7 +91,7 @@
     padding-left: 7%;
   }
 
-  .desktop{
+  .desktop-titel{
     position: relative;
     top: 40vh;
     transition: top .5s ease-in-out;
@@ -210,13 +211,13 @@
     margin-left: 7px;
     background-size: 50%;
   }
-}
-
-@media (orientation: landscape){
-  .mobile
+  .desktop-img
   {
     display: none;
   }
+}
+
+@media (orientation: landscape){
 
   .info-article
   {
@@ -225,8 +226,12 @@
     margin-top: 0;
     height: 100vh;
   }
+  .more-info
+  {
+    margin: 10px;
+  }
 
-  .desktop
+  .desktop-titel
   {
     background-image: url("https://via.placeholder.com/300x300");
     background-repeat: no-repeat;
@@ -245,11 +250,22 @@
   }
   .first
   {
+    display: flex;
+    align-items: center;
     text-align: center;
+    width:80vh;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
   }
-.second
-{
-  margin:10px;
-}
+  .second
+  {
+    margin:10px;
+  }
+  .desktop-img
+  {
+    float:right;
+    margin: 10px;
+  }
 
 }
