@@ -11,7 +11,6 @@ const infoToggle = (event,elmnt) =>
             elmnt.classList.remove('hide');
         });
     }
-    console.log(document.querySelectorAll('.info-article.expanded'));
     document.querySelector('.landing').classList.toggle('hide');
     window.scrollTo(0, elmnt.parentNode.parentNode.offsetTop);
 }
