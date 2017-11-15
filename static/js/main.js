@@ -2,6 +2,8 @@ const infoToggle = (event,elmnt) =>
 {
     event.preventDefault();
     elmnt.parentNode.parentNode.classList.toggle('expanded');
+    document.querySelector('.landing').classList.toggle('hide');
+    window.scrollTo(0, elmnt.parentNode.parentNode.offsetTop);
 }
 
 window.onload = () => {
