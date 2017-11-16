@@ -90,12 +90,12 @@
     top: 10vh;
   }
   .info-article .title{
-    font-size: 54px;
+    font-size: 36px;
     font-weight: bold;
     color: rgb(255,198,138);
     transition: all .5s ease-in-out;
     position: relative;
-    top: 40vh;
+    top: 60vh;
   }
   .info-article.expanded .title{
     font-size: 36px;
@@ -109,7 +109,7 @@
     margin: 15px;
     color: white;
     position: relative;
-    top: 40vh;
+    top: 60vh;
   }
   .info-article.expanded .not-title{
     display: none;
