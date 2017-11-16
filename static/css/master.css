@@ -157,12 +157,25 @@
     opacity: 0;
     transition: visibility 0s;
   }
+  .info-article .more-info-pt2{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s;
+    display: none;
+  }
   .info-article.expanded .more-info{
     visibility: visible;
     opacity: 1;
     overflow: scroll;
     margin-top: 100%;
     font-size: 1.5em;
+  }
+  .info-article.expanded .more-info-pt2{
+    visibility: visible;
+    opacity: 1;
+    overflow: scroll;
+    font-size: 1.5em;
+    display: inherit;
   }
   .info-article .article-nav{
     display: none;
@@ -226,15 +239,10 @@
   {
     display: none;
   }
-  .desktop-img-sc
+  .info-article:not(.expanded).desktop-img-sc
   {
     display: none;
   }
-  .more-info-pt2
-  {
-    display: none;
-  }
-
 }
 
 @media (orientation: landscape){
