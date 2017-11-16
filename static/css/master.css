@@ -244,7 +244,7 @@
   }
   .more-info-pt2
   {
-    height:90vh;
+    height:80vh;
   }
   .desktop-titel
   {
@@ -283,9 +283,10 @@
   .desktop-img
   {
     float:right;
-    margin: 50px;
-    height:50%;
-    width:30%;
+    margin-right: 50px;
+    margin-left:50px;
+    height:60%;
+    width:35%;
   }
   .bg-pink
   {
@@ -304,9 +305,10 @@
   .desktop-img-sc
   {
     float:left;
-    margin: 50px;
-    height:60%;
-    width:30%;
+    margin-left: 50px;
+    margin-right:50px;
+    height:80%;
+    width:40%;
   }
 
 }
