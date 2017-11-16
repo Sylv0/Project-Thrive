@@ -240,6 +240,11 @@
   .more-info
   {
     margin: 10px;
+    height:90vh;
+  }
+  .more-info-pt2
+  {
+    height:90vh;
   }
   .desktop-titel
   {
@@ -269,16 +274,17 @@
     height: 20vh;
     border: 2px dashed black;
     margin:10vh auto 10vh auto;
+    padding:10px;
   }
   .second
   {
-    margin:10px;
+    margin:20px 10px 20px 10px;
   }
   .desktop-img
   {
     float:right;
     margin: 50px;
-    height:30%;
+    height:50%;
     width:30%;
   }
   .bg-pink
@@ -290,6 +296,17 @@
   {
     margin: 10px;
     font-size: 30px;
+  }
+  .first-p
+  {
+    margin: 10px;
+  }
+  .desktop-img-sc
+  {
+    float:left;
+    margin: 50px;
+    height:60%;
+    width:30%;
   }
 
 }
