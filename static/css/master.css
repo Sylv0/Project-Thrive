@@ -259,12 +259,22 @@
   .more-info
   {
     margin: 10px;
+    margin-right: 150px;
+    margin-left: 150px;
     height:90vh;
+  }
+  .first-section
+  {
+    margin-top:15vh;
   }
   .more-info-pt2
   {
     height:80vh;
     margin-top: 120px;
+    text-align: right;
+    margin: 50px;
+    margin-top: 150px;
+    margin-right: 150px;
   }
   .desktop-titel
   {
@@ -294,8 +304,8 @@
     height: 20vh;
     border: 5px dashed white;
     border-radius:8px;
-    margin:10vh auto 10vh auto;
-    padding:15px;
+    margin:15vh auto 10vh auto;
+    padding:13px;
     font-size: 25px;
   }
   .second
@@ -307,7 +317,6 @@
     float:right;
     margin-right: 50px;
     margin-left:50px;
-
     width:28vw;
   }
   .bg-pink
@@ -317,7 +326,7 @@
   }
   .more-info h4
   {
-    margin: 10px;
+    margin: 15px;
     font-size: 30px;
   }
   .first-p
@@ -329,9 +338,18 @@
   .desktop-img-sc
   {
     float:left;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right:50px;
     width:60vh;
   }
+  .more-info-pt2 h4
+  {
+    margin-bottom: 40px;
+  }
+  .more-info-pt2 p
+  {
+    margin-bottom:30px;
+  }
+
 
 }
