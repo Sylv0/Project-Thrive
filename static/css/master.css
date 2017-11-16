@@ -227,7 +227,9 @@
 }
 
 @media (orientation: landscape){
-
+  .mobile{
+    display: none;
+  }
   .info-article
   {
     padding:10px;
