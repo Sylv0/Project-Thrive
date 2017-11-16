@@ -5,72 +5,61 @@
 * {
   margin: 0; padding: 0; box-sizing: border-box; z-index: 1;
 }
-
 .container
 {
   background-color: rgb(255,198,138);
   font-family: 'Playfair Display',serif;
   color: black;
 }
-
 .bg-yellow
 {
   background-color: rgb(255, 198, 64);
 }
-
 .bg-blue
 {
   background-color: rgb(101, 52, 255);
 }
-
 .bg-pink
 {
   width: 100%;
-  height:1000px;
+  height:800px;
   background-color: rgb(252, 214, 219);
 }
-
 .bg-purple
 {
   background-color: rgb(242, 121, 121);
 }
-
-.hide{
+.hide
+{
   display: none;
 }
 
 @media (orientation: portrait) and (max-width: 736px){
 
-
   .container
   {
     width: 100%;
   }
-
   .info-section
   {
     height: 100%;
   }
-
   .landing
   {
     height: 100vh;
     padding: 50px 75px;
     background-color: pink;
   }
-
   .landing h2
   {
     font-weight: bold;
     font-size: 2em;
   }
-
   .landing p
   {
     margin-top: 30%;
     letter-spacing: 2px;
   }
-
   .info-article
   {
     background-image: url("https://via.placeholder.com/750x1334");
@@ -80,32 +69,26 @@
     transition: all .5s ease-in-out;
     height: 100vh;
   }
-
   .info-article.expanded{
     background-position: 80% 5%;
     background-size: 45%;
     padding: 5%;
     height: auto;
   }
-
   .info-article .content{
     height: auto;
     padding: 0 7%;
   }
-
   .info-article.expanded .content{
     height: 100%;
     padding-left: 0%;
   }
-
   .desktop-titel{
     transition: top .5s ease-in-out;
   }
-
   .info-article.expanded .desktop{
     top: 10vh;
   }
-
   .info-article .title{
     font-size: 54px;
     font-weight: bold;
@@ -114,7 +97,6 @@
     position: relative;
     top: 40vh;
   }
-
   .info-article.expanded .title{
     font-size: 36px;
     color: white;
@@ -122,7 +104,6 @@
     top: 10vh;
     left: 0;
   }
-
   .info-article .not-title{
     font-size: 18px;
     margin: 15px;
@@ -130,11 +111,9 @@
     position: relative;
     top: 40vh;
   }
-
   .info-article.expanded .not-title{
     display: none;
   }
-
   .info-article .toggle-info{
     position: relative;
     text-decoration: none;
@@ -148,11 +127,9 @@
     animation-direction: normal;
     top: 80vh;
   }
-
   .info-article .toggle-info::after{
     content: 'Visa Mer';
   }
-
   .info-article.expanded .toggle-info{
     text-decoration: none;
     color: white;
@@ -168,17 +145,14 @@
     position: relative;
     top: 6vh;
   }
-
   .info-article.expanded .toggle-info::after{
     content: 'Stäng';
   }
-
   .info-article .more-info{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s;
   }
-
   .info-article.expanded .more-info{
     visibility: visible;
     opacity: 1;
@@ -186,17 +160,14 @@
     margin-top: 100%;
     font-size: 1.5em;
   }
-
   .info-article .article-nav{
     display: none;
     justify-content: space-between;
     margin-top: 10px;
   }
-
   .info-article.expanded .article-nav{
     display: flex;
   }
-
   .article-nav a{
     color: white;
     text-decoration: none;
@@ -204,7 +175,6 @@
     border-radius: 5px;
     padding: 5px;
   }
-
   .page-bar{
     display: flex;
     flex-direction: column;
@@ -214,25 +184,20 @@
     z-index: 2;
     opacity: .5;
   }
-
   .page-bar li{
     margin: 1px 5px;
     list-style-type: none;
   }
-
   .page-bar li::before{
     content: "• ";
     color: gray; /* or whatever color you prefer */
   }
-
   .page-bar li.active{
     color: red;
   }
-
   .page-bar li.active::before{
     color: red; /* or whatever color you prefer */
   }
-
   .page-bar span{
     width: 2px;
     height: 20px;
@@ -259,23 +224,24 @@
   {
     margin: 10px;
   }
-
   .desktop-titel
   {
     background-image: url("https://via.placeholder.com/300x300");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    height:60vh;
+    height:80vh;
     width:150vh;
-    margin-left: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:90px;
   }
   .title
   {
     position: relative;
     font-size: 54px;
     font-weight: bold;
-
+    left:-50px;
   }
   .first
   {
@@ -296,5 +262,9 @@
     float:right;
     margin: 10px;
   }
-
+  .bg-pink
+  {
+    font-size: 50px;
+    padding: 100px;
+  }
 }
