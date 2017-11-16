@@ -25,7 +25,7 @@
 .bg-pink
 {
   width: 100%;
-  height:800px;
+  height:1200px;
   background-color: rgb(252, 214, 219);
   color: black;
 }
@@ -256,12 +256,34 @@
     height: 100%;
     overflow: auto;
   }
+  .bg-pink
+  {
+    font-size: 50px;
+    padding: 50px;
+  }
+  .bg-pink h2
+  {
+    font-size:100px;
+  }
+  .landing-text
+  {
+    margin:100px;
+  }
+  .second-titel
+  {
+    margin-bottom: 100px;
+  }
   .more-info
   {
-    margin: 10px;
+    margin: 15px;
     margin-right: 150px;
     margin-left: 150px;
     height:90vh;
+  }
+  .more-info h4
+  {
+    margin: 15px;
+    font-size: 30px;
   }
   .first-section
   {
@@ -270,14 +292,18 @@
   .more-info-pt2
   {
     height:80vh;
-    margin-top: 120px;
     text-align: right;
     margin: 50px;
-    margin-top: 150px;
     margin-right: 150px;
+  }
+
+  .more-info-pt2 h4
+  {
+    font-size: 30px;
   }
   .desktop-titel
   {
+    border-radius: 5px;
     background-image: url("https://via.placeholder.com/300x300");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -286,14 +312,24 @@
     width:150vh;
     margin-left: auto;
     margin-right: auto;
-    margin-top:90px;
+    margin-top:160px;
+  }
+  .desktop-titel p
+  {
+    top:22%;
+    position: relative;
   }
   .title
   {
     position: relative;
-    font-size: 54px;
+    font-size: 75px;
     font-weight: bold;
-    left:-50px;
+    left:-100px;
+  }
+  .not-title
+  {
+    left:-40px;
+    font-size: 25px;
   }
   .first
   {
@@ -310,33 +346,26 @@
   }
   .second
   {
-    margin:20px 10px 20px 10px;
+    margin:20px 10px 20px 15px;
   }
   .desktop-img
   {
+    border-radius: 5px;
     float:right;
     margin-right: 50px;
     margin-left:50px;
     width:28vw;
   }
-  .bg-pink
-  {
-    font-size: 50px;
-    padding: 100px;
-  }
-  .more-info h4
-  {
-    margin: 15px;
-    font-size: 30px;
-  }
+
   .first-p
   {
     line-height: 35px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 100px;
   }
   .desktop-img-sc
   {
+    border-radius: 5px;
     float:left;
     margin-left: 100px;
     margin-right:50px;
