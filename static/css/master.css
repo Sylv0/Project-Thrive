@@ -177,6 +177,7 @@
     border-radius: 5px;
     padding: 5px;
   }
+
   .page-bar{
     display: flex;
     flex-direction: column;
