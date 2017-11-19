@@ -116,6 +116,7 @@
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s;
+        display: none;
       }
       .info-article .more-info-pt2{
         visibility: hidden;
@@ -129,6 +130,7 @@
         overflow: scroll;
         margin-top: 100%;
         font-size: 1.5em;
+        display: inherit;
       }
       .info-article.expanded .more-info-pt2{
         visibility: visible;
