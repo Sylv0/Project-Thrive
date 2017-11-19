@@ -1,0 +1,135 @@
+@media (orientation: landscape){
+    .mobile{
+        display: none;
+    }
+    .info-article
+    {
+        padding:10px;
+        margin-top: 0;
+        height: 100%;
+        overflow: auto;
+    }
+    .bg-pink
+    {
+        font-size: 50px;
+        padding: 50px;
+    }
+    .bg-pink h2
+    {
+        font-size:100px;
+    }
+    .landing-text
+    {
+        margin:100px;
+    }
+    .second-titel
+    {
+        margin-bottom: 100px;
+    }
+    .more-info
+    {
+        margin: 15px;
+        margin-right: 150px;
+        margin-left: 150px;
+        height:90vh;
+    }
+    .more-info h4
+    {
+        margin: 15px;
+        font-size: 30px;
+    }
+    .first-section
+    {
+        margin-top:15vh;
+    }
+    .more-info-pt2
+    {
+        height:80vh;
+        text-align: right;
+        margin: 50px;
+        margin-right: 150px;
+    }
+
+    .more-info-pt2 h4
+    {
+        font-size: 30px;
+    }
+    .desktop-titel
+    {
+        border-radius: 5px;
+        background-image: url("https://via.placeholder.com/300x300");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        height:80vh;
+        width:150vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:160px;
+    }
+    .desktop-titel p
+    {
+        top:22%;
+        position: relative;
+    }
+    .title
+    {
+        position: relative;
+        font-size: 75px;
+        font-weight: bold;
+        left:-100px;
+    }
+    .not-title
+    {
+        left:-40px;
+        font-size: 25px;
+    }
+    .first
+    {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width:90vh;
+        height: 20vh;
+        border: 5px dashed white;
+        border-radius:8px;
+        margin:15vh auto 10vh auto;
+        padding:13px;
+        font-size: 25px;
+    }
+    .second
+    {
+        margin:20px 10px 20px 15px;
+    }
+    .desktop-img
+    {
+        border-radius: 5px;
+        float:right;
+        margin-right: 50px;
+        margin-left:50px;
+        width:28vw;
+    }
+
+    .first-p
+    {
+        line-height: 35px;
+        margin-left: 15px;
+        margin-bottom: 100px;
+    }
+    .desktop-img-sc
+    {
+        border-radius: 5px;
+        float:left;
+        margin-left: 100px;
+        margin-right:50px;
+        width:60vh;
+    }
+    .more-info-pt2 h4
+    {
+        margin-bottom: 40px;
+    }
+    .more-info-pt2 p
+    {
+        margin-bottom:30px;
+    }
+}

@@ -1,0 +1,206 @@
+@media (orientation: portrait) and (max-width: 736px){
+    
+      .container
+      {
+        width: 100%;
+      }
+      .info-section
+      {
+        height: 100%;
+      }
+      .landing
+      {
+        height: 100vh;
+        padding: 50px 75px;
+        background-color: pink;
+      }
+      .landing h2
+      {
+        font-weight: bold;
+        font-size: 2em;
+      }
+      .landing p
+      {
+        margin-top: 30%;
+        letter-spacing: 2px;
+      }
+      .info-article
+      {
+        background-image: url("https://via.placeholder.com/750x1334");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all .5s ease-in-out;
+        height: 100vh;
+      }
+      .info-article.expanded{
+        background-position: 80% 5%;
+        background-size: 45%;
+        padding: 5%;
+        height: auto;
+      }
+      .info-article .content{
+        height: auto;
+        padding: 0 7%;
+      }
+      .info-article.expanded .content{
+        height: 100%;
+        padding-left: 0%;
+      }
+      .desktop-titel{
+        transition: top .5s ease-in-out;
+      }
+      .info-article.expanded .desktop{
+        top: 10vh;
+      }
+      .info-article .title{
+        font-size: 36px;
+        font-weight: bold;
+        color: rgb(255,198,138);
+        transition: all .5s ease-in-out;
+        position: relative;
+        top: 60vh;
+      }
+      .info-article.expanded .title{
+        font-size: 36px;
+        color: white;
+        position: relative;
+        top: 10vh;
+        left: 0;
+      }
+      .info-article .not-title{
+        font-size: 18px;
+        margin: 15px;
+        color: white;
+        position: relative;
+        top: 60vh;
+      }
+      .info-article.expanded .not-title{
+        display: none;
+      }
+      .info-article .toggle-info{
+        position: relative;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(246,145,149);
+        padding: 5px;
+        font-size: 24px;
+        animation: btn-scale;
+        animation-iteration-count: 1;
+        animation-duration: .5s;
+        animation-direction: normal;
+        top: 80vh;
+      }
+      .info-article .toggle-info::after{
+        content: 'Visa Mer';
+      }
+      .info-article.expanded .toggle-info{
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 18px;
+        left: 80%;
+        animation: btn-scale;
+        animation-iteration-count: 1;
+        animation-duration: .5s;
+        animation-direction: reverse;
+        position: relative;
+        top: 6vh;
+      }
+      .info-article.expanded .toggle-info::after{
+        content: 'Stäng';
+      }
+      .info-article .more-info{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s;
+      }
+      .info-article .more-info-pt2{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s;
+        display: none;
+      }
+      .info-article.expanded .more-info{
+        visibility: visible;
+        opacity: 1;
+        overflow: scroll;
+        margin-top: 100%;
+        font-size: 1.5em;
+      }
+      .info-article.expanded .more-info-pt2{
+        visibility: visible;
+        opacity: 1;
+        overflow: scroll;
+        font-size: 1.5em;
+        display: inherit;
+      }
+      .info-article .article-nav{
+        display: none;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      .info-article.expanded .article-nav{
+        display: flex;
+      }
+      .article-nav a{
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px;
+      }
+    
+      .info-article:nth-child(2) .article-nav a.prev{
+        display: none;
+      }
+    
+      .info-article:nth-child(2) .article-nav{
+        justify-content: flex-end;
+      }
+    
+      .info-article:last-child .article-nav a{
+        display: none;
+      }
+    
+      .page-bar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        opacity: .5;
+      }
+      .page-bar li{
+        margin: 1px 5px;
+        list-style-type: none;
+      }
+      .page-bar li::before{
+        content: "• ";
+        color: gray; /* or whatever color you prefer */
+      }
+      .page-bar li.active{
+        color: red;
+      }
+      .page-bar li.active::before{
+        color: red; /* or whatever color you prefer */
+      }
+      .page-bar span{
+        width: 2px;
+        height: 20px;
+        background-color: gray;
+        margin-left: 7px;
+        background-size: 50%;
+      }
+      .desktop-img
+      {
+        display: none;
+      }
+      .info-article:not(.expanded).desktop-img-sc
+      {
+        display: none;
+      }
+    }
