@@ -29,12 +29,12 @@
         background-image: url("https://via.placeholder.com/750x1334");
         background-size: 100%;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top left;
         transition: all .5s ease-in-out;
         height: 100vh;
       }
       .info-article.expanded{
-        background-position: 80% 5%;
+        background-position: 85% 5vw;
         background-size: 45%;
         padding: 5%;
         height: auto;
@@ -54,7 +54,7 @@
         top: 10vh;
       }
       .info-article .title{
-        font-size: 36px;
+        font-size: 24px;
         font-weight: bold;
         color: rgb(255,198,138);
         transition: all .5s ease-in-out;

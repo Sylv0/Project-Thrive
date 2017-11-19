@@ -38,3 +38,16 @@
     opacity: 1;
   }
 }
+
+@keyframes text-slide {
+  0%{
+    display: none;
+  }
+  1%{
+    display: inherit;
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
