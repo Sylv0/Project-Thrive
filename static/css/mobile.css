@@ -128,7 +128,7 @@
         visibility: visible;
         opacity: 1;
         overflow: scroll;
-        margin-top: 100%;
+        margin-top: 75%;
         font-size: 1.5em;
         display: inherit;
       }
