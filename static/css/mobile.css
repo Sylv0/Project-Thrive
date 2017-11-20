@@ -155,16 +155,8 @@
         padding: 5px;
       }
     
-      .info-article:nth-child(2) .article-nav a.prev{
-        display: none;
-      }
-    
       .info-article:nth-child(2) .article-nav{
         justify-content: flex-end;
-      }
-    
-      .info-article:last-child .article-nav a{
-        display: none;
       }
     
       .page-bar{

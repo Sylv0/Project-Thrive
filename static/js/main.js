@@ -1,21 +1,30 @@
-if (document.documentElement.clientWidth < 736) {
-    const infoToggle = (event, elmnt) => {
-        event.preventDefault();
-        elmnt.parentNode.parentNode.classList.toggle('expanded');
-        if (document.querySelectorAll('.info-article.expanded').length > 0) {
-            document.querySelectorAll('.info-article:not(.expanded)').forEach((elmnt) => {
-                elmnt.classList.add('hide');
-            });
-        } else if (document.querySelectorAll('.info-article.expanded').length === 0) {
-            document.querySelectorAll('.info-article.hide').forEach((elmnt) => {
-                elmnt.classList.remove('hide');
-            });
-        }
-        document.querySelector('.landing').classList.toggle('hide');
-        window.scrollTo(0, elmnt.parentNode.parentNode.offsetTop);
+const infoToggle = (event, elmnt) => {
+    event.preventDefault();
+    elmnt.parentNode.parentNode.classList.toggle('expanded');
+    if (document.querySelectorAll('.info-article.expanded').length > 0) {
+        document.querySelectorAll('.info-article:not(.expanded)').forEach((elmnt) => {
+            elmnt.classList.add('hide');
+        });
+    } else if (document.querySelectorAll('.info-article.expanded').length === 0) {
+        document.querySelectorAll('.info-article.hide').forEach((elmnt) => {
+            elmnt.classList.remove('hide');
+        });
     }
+    document.querySelector('.landing').classList.toggle('hide');
+    window.scrollTo(0, elmnt.parentNode.parentNode.offsetTop);
+};
 
-    window.onload = () => {
+const changeArticle = (event, elemnt, index) => {
+    event.preventDefault();
+    document.querySelector('.info-article.expanded').classList.add("hide");
+    document.querySelector('.info-article.expanded').classList.remove("expanded");
+    document.querySelectorAll(".info-article").item(index).classList.add('expanded');
+    document.querySelectorAll(".info-article").item(index).classList.remove('hide');
+    window.scrollTo(0,0);
+};
+
+window.onload = () => {
+    if (document.documentElement.clientWidth < 736) {
         const pages = document.querySelector('#info-section').children;
         const page_list = document.querySelector('#page-list');
 
