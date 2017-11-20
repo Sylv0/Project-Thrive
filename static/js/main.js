@@ -12,6 +12,7 @@ const infoToggle = (event, elmnt) => {
     }
     document.querySelector('.landing').classList.toggle('hide');
     window.scrollTo(0, elmnt.parentNode.parentNode.offsetTop);
+    document.querySelector(".page-bar").classList.toggle("hide");
 };
 
 const changeArticle = (event, elemnt, index) => {

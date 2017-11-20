@@ -34,7 +34,7 @@
 {
   background-color: rgb(242, 121, 121);
 }
-.hide
+.hide 
 {
-  display: none;
+  display: none !important;
 }
