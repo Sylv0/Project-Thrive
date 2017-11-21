@@ -146,7 +146,8 @@
         margin-top: 20px;
       }
       .first{
-        border: 3px dotted white;
+        border: 3px dashed white;
+        border-radius: 10px;
       }
       .first p{
         padding: 10px;
