@@ -238,8 +238,15 @@
       {
         display: none;
       }
-      .info-article:not(.expanded).desktop-img-sc
+      .info-article:not(.expanded) .desktop-img-sc
       {
         display: none;
+      }
+      .info-article.expanded .desktop-img-sc
+      {
+        display: inherit;
+        position: relative;
+        width: 100%;
+        height: auto;
       }
     }
