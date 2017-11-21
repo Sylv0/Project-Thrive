@@ -49,10 +49,5 @@
 }
 .hide
 {
-  background-image: url("../images/Pink.png");
-  color: black;
-}
-.hide
-{
   display: none !important;
 }
