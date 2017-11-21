@@ -129,15 +129,27 @@
         visibility: visible;
         opacity: 1;
         overflow: scroll;
-        font-size: 1.5em;
         display: inherit;
+        text-align: center;
+      }
+      .info-article.expanded .more-info > *{
+        margin-top: 20px;
       }
       .info-article.expanded .more-info-pt2{
         visibility: visible;
         opacity: 1;
         overflow: scroll;
-        font-size: 1.5em;
         display: inherit;
+        text-align: center;
+      }
+      .info-article.expanded .more-info-pt2 > *{
+        margin-top: 20px;
+      }
+      .first{
+        border: 3px dotted white;
+      }
+      .first p{
+        padding: 10px;
       }
       .info-article .article-nav{
         display: none;
@@ -150,7 +162,7 @@
       .article-nav a{
         color: white;
         text-decoration: none;
-        border: 1px solid white;
+        border-bottom: 2px dashed white;
         border-radius: 5px;
         padding: 5px;
       }
