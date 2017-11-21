@@ -30,7 +30,7 @@
       }
       .info-article.expanded{
         padding: 5%;
-        height: auto;
+        height: 100%;
       }
       .info-article .content{
         background-image: url("https://via.placeholder.com/750x1334");
