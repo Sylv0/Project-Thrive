@@ -36,7 +36,7 @@
         background-image: url("https://via.placeholder.com/750x1334");
         background-size: 100%;
         background-repeat: no-repeat;
-        background-position: top left;
+        background-position: top right;
         transition: all .5s ease-in-out;
         height: auto;
         padding: 0 7%;
