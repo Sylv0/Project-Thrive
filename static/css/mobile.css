@@ -45,7 +45,7 @@
         background-position: 85% 5vw;
         background-size: 45%;
         height: 100%;
-        padding-left: 0%;
+        padding: 0;
       }
       .desktop-titel{
         transition: top .5s ease-in-out;
@@ -102,13 +102,13 @@
         border: 1px solid white;
         border-radius: 5px;
         font-size: 18px;
-        left: 80%;
         animation: btn-scale;
         animation-iteration-count: 1;
         animation-duration: .5s;
         animation-direction: reverse;
         position: relative;
-        top: 6vh;
+        top: 0;
+        float: right;
       }
       .info-article.expanded .toggle-info::after{
         content: 'Stäng';
