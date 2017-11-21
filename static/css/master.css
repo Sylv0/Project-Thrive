@@ -12,7 +12,10 @@
 }
 .bg-blue
 {
+
   /* background-color: rgb(101, 52, 255);
+
+  background-image: url("../images/Blue.png");
   width: 100%;
   height: 800px; */
   background-image: url("../images/Blue.png");
@@ -23,6 +26,7 @@
 {
   /* width: 100%;
   height:1024px;
+
   background-color: rgb(252, 214, 219);
   color: black; */
   background-image: url("../images/Pink.png");
@@ -34,7 +38,12 @@
   background-repeat: repeat;
   background-position-y: 0;
 }
-.hide 
+.hide
+
+  background-image: url("../images/Pink.png");
+  color: black;
+}
+.hide
 {
   display: none !important;
 }
