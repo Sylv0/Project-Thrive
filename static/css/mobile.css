@@ -12,7 +12,7 @@
       {
         height: 100vh;
         padding: 50px 75px;
-        background-color: pink;
+        /* background-color: pink; */
       }
       .landing h2
       {
@@ -26,24 +26,24 @@
       }
       .info-article
       {
+        height: 100vh;
+      }
+      .info-article.expanded{
+        padding: 5%;
+        height: auto;
+      }
+      .info-article .content{
         background-image: url("https://via.placeholder.com/750x1334");
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: top left;
         transition: all .5s ease-in-out;
-        height: 100vh;
-      }
-      .info-article.expanded{
-        background-position: 85% 5vw;
-        background-size: 45%;
-        padding: 5%;
-        height: auto;
-      }
-      .info-article .content{
         height: auto;
         padding: 0 7%;
       }
       .info-article.expanded .content{
+        background-position: 85% 5vw;
+        background-size: 45%;
         height: 100%;
         padding-left: 0%;
       }
