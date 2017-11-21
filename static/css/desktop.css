@@ -48,12 +48,27 @@
         text-align: right;
         margin: 50px;
         margin-right: 150px;
-        margin-top: 200px
+        margin-top: 200px;
     }
 
     .more-info-pt2 h4
     {
         font-size: 30px;
+    }
+    .more-info-pt3
+    {
+        height:500px;
+        text-align: right;
+        margin: 50px;
+        margin-right: 150px;
+        margin-top: 50px;
+    }
+    .more-info-pt4
+    {
+        margin-top: 150px;
+        margin-right: 150px;
+        margin-left: 150px;
+        height:650px;
     }
     .desktop-titel
     {
