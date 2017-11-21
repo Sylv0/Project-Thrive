@@ -1,4 +1,4 @@
-@media (orientation: portrait) and (max-width: 736px){
+@media (orientation: portrait) and (max-width: 768px){
       .content.bg-img-1{
         background-image: url("../images/Conscious_Fashion_Phone.png") !important;
       }
