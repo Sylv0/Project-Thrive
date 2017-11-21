@@ -7,13 +7,12 @@
 }
 .container
 {
-  background-color: rgb(255,198,138);
   font-family: 'Playfair Display',serif;
   color: white;
 }
-.bg-yellow
+.bg-green
 {
-  background-color: rgb(255, 198, 64);
+  background-image: url("../images/Green.png");
 }
 .bg-blue
 {
@@ -34,7 +33,7 @@
   background-repeat: repeat;
   background-position-y: 0;
 }
-.bg-purple
+.hide
 {
   background-color: rgb(242, 121, 121);
 }
