@@ -49,27 +49,33 @@
         margin: 50px;
         margin-right: 150px;
         margin-top: 200px;
+        margin-bottom: 100px;
     }
-
-    .more-info-pt2 h4
+    .bg-green h4
+    {
+      margin-bottom: 40px;
+    }
+   h4
     {
         font-size: 30px;
     }
-    .more-info-pt3
+    .more-info-pt4
     {
         height:500px;
         text-align: right;
-        margin: 50px;
+        margin: 100px;
         margin-right: 150px;
         margin-top: 50px;
+        margin-bottom: 150px;
     }
-    .more-info-pt4
+    .more-info-pt3
     {
         margin-top: 150px;
         margin-right: 150px;
         margin-left: 150px;
         height:650px;
     }
+
     .desktop-titel
     {
         border-radius: 5px;
@@ -147,7 +153,7 @@
     {
         margin-bottom:30px;
     }
-    
+
     .desktop-titel.bg-img-1{
       background-image: url("../images/Conscious_Fashion.png") !important;
     }
