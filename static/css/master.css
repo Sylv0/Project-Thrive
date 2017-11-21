@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Playfair+Display|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
 @import url('animations.css');
 
 * {
@@ -7,7 +7,7 @@
 }
 .container
 {
-  font-family: 'Playfair Display',serif;
+  font-family: Raleway, Sans-Serif;
   color: white;
 }
 .bg-green
@@ -51,4 +51,8 @@
 .hide
 {
   display: none !important;
+}
+
+.landing, .desktop-titel{
+  font-family: "Playfair Display", Serif;
 }
