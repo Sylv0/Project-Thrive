@@ -50,8 +50,9 @@
       .desktop-titel{
         transition: top .5s ease-in-out;
       }
-      .info-article.expanded .desktop{
+      .info-article.expanded .desktop-titel{
         top: 10vh;
+        margin-bottom: 75%;
       }
       .info-article .title{
         font-size: 24px;
@@ -128,7 +129,6 @@
         visibility: visible;
         opacity: 1;
         overflow: scroll;
-        margin-top: 75%;
         font-size: 1.5em;
         display: inherit;
       }
