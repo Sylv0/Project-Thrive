@@ -39,11 +39,6 @@
   background-position-y: 0;
 }
 .hide
-
-  background-image: url("../images/Pink.png");
-  color: black;
-}
-.hide
 {
   display: none !important;
 }
