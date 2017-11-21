@@ -148,13 +148,13 @@
         margin-bottom:30px;
     }
     
-    .bg-img-1{
+    .desktop-titel.bg-img-1{
       background-image: url("../images/Conscious_Fashion.png") !important;
     }
-    .bg-img-2{
+    .desktop-titel.bg-img-2{
       background-image: url("../images/benefits_slowfashion.png") !important;
     }
-    .bg-img-3{
+    .desktop-titel.bg-img-3{
       background-image: url("../images/respektfullt_mode.png") !important;
     }
 }
