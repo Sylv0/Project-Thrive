@@ -6,7 +6,6 @@
         background-image: url("../images/benefits_slowfashion_phone.png") !important;
       }
       .content.bg-img-3{
-        background-image: url("../images/respektfullt_mode_phone_v2.png") !important;
         background-image: url("../images/respektfullt_mode_phone_v1.png") !important;
       }
       .container
@@ -22,24 +21,6 @@
         height: 100vh;
         padding: 50px 75px;
         /* background-color: pink; */
-      }
-      .landing *{
-        position: relative;
-        animation-name: article-slide;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
-        animation-fill-mode: backwards;
-      }
-      .landing h2
-      {
-        font-weight: bold;
-        font-size: 2em;
-      }
-      .landing p
-      {
-        margin-top: 30%;
-        letter-spacing: 2px;
-        animation-delay: 1s;
       }
       .info-article
       {
