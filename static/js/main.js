@@ -48,6 +48,8 @@ window.onload = () => {
                 break;
             }
         }
+        if(document.querySelectorAll('li.active').length === 0)
+            page_list.children[0].classList.add('active');
 
         window.addEventListener('scroll', (event) => {
             for (let i = 0; i < pages.length; i++) {
