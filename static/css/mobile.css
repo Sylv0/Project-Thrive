@@ -23,7 +23,6 @@
       }
       .landing p{
         position: relative;
-        transform: translateY(100%);
       }
       .info-article
       {
