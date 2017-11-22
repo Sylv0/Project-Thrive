@@ -22,6 +22,10 @@
         padding: 50px 75px;
         /* background-color: pink; */
       }
+      .landing p{
+        position: relative;
+        transform: translateY(100%);
+      }
       .info-article
       {
         height: 100vh;
