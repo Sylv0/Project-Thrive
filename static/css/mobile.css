@@ -56,24 +56,21 @@
         margin-bottom: 75%;
       }
       .info-article .title{
-        font-size: 24px;
+        font-size: 32px;
         font-weight: bold;
-        color: rgb(255,198,138);
         transition: all .5s ease-in-out;
         position: relative;
         top: 60vh;
       }
       .info-article.expanded .title{
         font-size: 36px;
-        color: white;
         position: relative;
         top: 10vh;
         left: 0;
       }
       .info-article .not-title{
-        font-size: 18px;
-        margin: 15px;
-        color: white;
+        font-size: 24px;
+        padding: 20px 10px;
         position: relative;
         top: 60vh;
       }
@@ -84,14 +81,16 @@
         position: relative;
         text-decoration: none;
         color: white;
-        background-color: rgb(246,145,149);
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid white;
+        border-radius: 5px;
         padding: 5px;
         font-size: 24px;
         animation: btn-scale;
         animation-iteration-count: 1;
         animation-duration: .5s;
         animation-direction: normal;
-        top: 80vh;
+        top: 85vh;
       }
       .info-article .toggle-info::after{
         content: 'Visa Mer';
@@ -99,20 +98,19 @@
       .info-article.expanded .toggle-info{
         text-decoration: none;
         color: white;
-        background-color: rgba(0, 0, 0, 0);
-        border: 1px solid white;
-        border-radius: 5px;
-        font-size: 18px;
+        border: none;
+        font-size: 32px;
         animation: btn-scale;
         animation-iteration-count: 1;
         animation-duration: .5s;
         animation-direction: reverse;
         position: relative;
-        top: 0;
+        top: 5%;
+        right: 5%;
         float: right;
       }
       .info-article.expanded .toggle-info::after{
-        content: 'Stäng';
+        content: 'X';
       }
       .info-article .more-info{
         visibility: hidden;
