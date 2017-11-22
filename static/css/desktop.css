@@ -102,11 +102,11 @@
         position: relative;
         font-size: 75px;
         font-weight: bold;
-        left:-100px;
+        left:-10%;
     }
     .not-title
     {
-        left:-40px;
+        left:-3%;
         font-size: 25px;
     }
     .first
