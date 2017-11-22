@@ -51,3 +51,12 @@
     opacity: 1;
   }
 }
+
+@keyframes article-slide {
+  0%{
+    left: -100vw;
+  }
+  100%{
+    left: 0vw;
+  }
+}

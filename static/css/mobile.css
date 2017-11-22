@@ -22,6 +22,14 @@
         padding: 50px 75px;
         /* background-color: pink; */
       }
+      .landing *{
+        position: relative;
+        animation-name: article-slide;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+      }
       .landing h2
       {
         font-weight: bold;
@@ -31,6 +39,7 @@
       {
         margin-top: 30%;
         letter-spacing: 2px;
+        animation-delay: 1s;
       }
       .info-article
       {
