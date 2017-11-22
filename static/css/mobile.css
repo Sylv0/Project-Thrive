@@ -27,8 +27,7 @@
         animation-name: article-slide;
         animation-duration: 1s;
         animation-iteration-count: 1;
-        animation-fill-mode: both;
-        animation-direction: alternate;
+        animation-fill-mode: backwards;
       }
       .landing h2
       {
