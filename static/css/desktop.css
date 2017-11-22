@@ -9,12 +9,12 @@
         height: 100%;
         overflow: auto;
     }
-    .bg-pink
+    .landing
     {
         font-size: 50px;
         padding: 50px;
     }
-    .bg-pink h2
+    .landing h2
     {
         font-size:100px;
     }
