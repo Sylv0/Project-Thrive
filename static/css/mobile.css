@@ -105,8 +105,7 @@
         animation-duration: .5s;
         animation-direction: reverse;
         position: relative;
-        top: 5%;
-        right: 5%;
+        top: 0;
         float: right;
       }
       .info-article.expanded .toggle-info::after{
