@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300,400');
 @import url('animations.css');
 
 * {
@@ -17,24 +17,12 @@
 }
 .bg-blue
 {
-
-  /* background-color: rgb(101, 52, 255);
-
-  background-image: url("../images/Blue.png");
-  width: 100%;
-  height: 800px; */
   background-image: url("../images/blue.png");
   background-repeat: repeat;
   background-position-y: 0;
 }
 .bg-pink
 {
-  /* width: 100%;
-  height:1024px;
-
-  background-color: rgb(252, 214, 219);
-  color: black;
-  */
   background-image: url("../images/pink.png");
   background-repeat: repeat;
   background-position-y: 0;

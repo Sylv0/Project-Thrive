@@ -43,7 +43,6 @@
         padding: 0 7%;
       }
       .info-article.expanded .content{
-        background-position: 85% 5vw;
         background-size: 45%;
         height: 100%;
         padding: 0;
@@ -100,6 +99,7 @@
         color: white;
         border: none;
         font-size: 32px;
+        font-weight: 300;
         animation: btn-scale;
         animation-iteration-count: 1;
         animation-duration: .5s;
