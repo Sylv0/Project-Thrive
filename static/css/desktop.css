@@ -45,7 +45,7 @@
     {
         margin-top:15vh;
     }
-    .more-info-pt2
+    .more-info.pt2
     {
         height:500px;
         text-align: right;
@@ -62,7 +62,7 @@
     {
         font-size: 30px;
     }
-    .more-info-pt4
+    .more-info.pt4
     {
         height:500px;
         text-align: right;
@@ -71,7 +71,7 @@
         margin-top: 50px;
         margin-bottom: 150px;
     }
-    .more-info-pt3
+    .more-info.pt3
     {
         margin-top: 150px;
         margin-right: 150px;
@@ -102,11 +102,11 @@
         position: relative;
         font-size: 75px;
         font-weight: bold;
-        left:-100px;
+        left:-10%;
     }
     .not-title
     {
-        left:-40px;
+        left:-3%;
         font-size: 25px;
     }
     .first
