@@ -40,6 +40,10 @@
   background-position-y: 0;
   color: black;
 }
+
+.bg-pink:not(.landing) .desktop-titel{
+  color: white;
+}
 .bg-purple
 {
   background-color: rgb(242, 121, 121);
