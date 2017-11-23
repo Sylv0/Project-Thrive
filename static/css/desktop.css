@@ -173,6 +173,10 @@
          font-size: 36px;
    }
 
+   .info-article.bg-pink{
+         padding-bottom: 50px;
+   }
+
     .desktop-titel.bg-img-1{
       background-image: url("../images/Conscious_Fashion.png") !important;
     }
