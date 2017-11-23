@@ -210,9 +210,18 @@
         margin-left: 7px;
         background-size: 50%;
       }
-      .desktop-img
+      .info-article:not(.expanded) .desktop-img
       {
         display: none;
+      }
+      .info-article.expanded .desktop-img
+      {
+        display: inherit;
+        position: relative;
+        width: 100%;
+        height: auto;
+        border: 2px dashed white;
+        border-radius: 5%;
       }
       .info-article:not(.expanded) .desktop-img-sc
       {
@@ -224,5 +233,7 @@
         position: relative;
         width: 100%;
         height: auto;
+        border: 2px dashed white;
+        border-radius: 5%;
       }
     }
