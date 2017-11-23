@@ -60,3 +60,18 @@
     left: 0vw;
   }
 }
+
+@keyframes pulse {
+      0%{
+            color: black;
+      }
+      10%{
+            color: gray;
+      }
+      20%{
+            color: black;
+      }
+      100%{
+            color: black;
+      }
+}

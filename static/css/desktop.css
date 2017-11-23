@@ -171,6 +171,9 @@
          color: black;
          font-weight: bold;
          font-size: 36px;
+         animation-name: pulse;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
    }
 
    .info-article.bg-pink{
