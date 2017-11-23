@@ -158,6 +158,21 @@
         margin-bottom:30px;
     }
 
+    .center{
+         margin: auto;
+         width: 50%;
+         padding: 10px;
+         text-align: center;
+   }
+
+   .center a{
+         text-decoration: none;
+         font-family: Raleway serif;
+         color: black;
+         font-weight: bold;
+         font-size: 36px;
+   }
+
     .desktop-titel.bg-img-1{
       background-image: url("../images/Conscious_Fashion.png") !important;
     }
