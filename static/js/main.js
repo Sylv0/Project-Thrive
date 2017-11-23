@@ -36,7 +36,7 @@ const changeArticle = (event, elemnt, index) => {
 
 // Wait for document to load and check if width is that of a tablet or smaller
 window.onload = () => {
-    if (document.documentElement.clientWidth < 736) {
+    if (document.documentElement.clientWidth < 1024) {
 
         // Save pages and page-list for later
         const pages = document.querySelector('#info-section').children;
