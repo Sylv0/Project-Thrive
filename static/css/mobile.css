@@ -165,12 +165,19 @@
         color: white;
         text-decoration: none;
         border-bottom: 2px dashed white;
-        border-radius: 5px;
         padding: 5px;
       }
 
       .info-article:nth-child(2) .article-nav{
         justify-content: flex-end;
+      }
+
+      .info-article.bg-pink.expanded a:not(.toggle-info){
+            color: #6534ff;
+      }
+
+      .info-article.bg-pink.expanded a:not(.toggle-info), .info-article.bg-pink.expanded a span{
+            border-color: #6534ff;
       }
 
       .page-bar{
