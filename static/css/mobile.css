@@ -8,6 +8,9 @@
       .content.bg-img-3{
         background-image: url("../images/respektfullt_mode_phone_v1.png") !important;
       }
+      .desktop{
+            display: none;
+      }
       .container
       {
         width: 100%;
